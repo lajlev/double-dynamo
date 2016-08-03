@@ -1,3 +1,4 @@
 _.sublime-project
 style.css
 node_modules
+.DS_Store
