@@ -1,11 +1,5 @@
 <?php get_header(); ?>
 
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$('html, body').animate({scrollTop: '265px'});
-	});
-</script>
-
 		<?php if (have_posts()) : ?>
 		<div class="archive content grid_12 clearfix">
 			<img src="<?php bloginfo('template_url'); ?>/img/archive.jpg" alt="" />

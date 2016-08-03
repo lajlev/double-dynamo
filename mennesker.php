@@ -4,13 +4,6 @@ Template Name: Mennesker
 */
 ?>
 <?php get_header(); ?>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-	    $('#nav4 div.tab').addClass('tabOpen');
-	    lastBlock = $("#nav4 div.tabOpen");
-	});
-</script>
-
 	<div class="team content grid_12 clearfix zi1">
 		<a href="#" name="team" class="anchor"></a>
 		<h1 class="description">Hvem er vi?</h1>
@@ -59,10 +52,10 @@ echo '<p>' .  $user->description  . '</p>';?>
 
 
 <?php /* authorPermalink() does not render the link to praktikant user correctly, manually overriding */
-if ( $user->ID == 26 ): ?> 
-	<a href="<?php bloginfo('url');?>/author/praktikanter-projektsansatte-og-frivillige/">Se Profil</a> 
+if ( $user->ID == 26 ): ?>
+	<a href="<?php bloginfo('url');?>/author/praktikanter-projektsansatte-og-frivillige/">Se Profil</a>
 <?php else : ?>
-	<a href="<?php bloginfo('url');?>/author/<?php authorPermalink($user->display_name);?>/">Se Profil</a> 
+	<a href="<?php bloginfo('url');?>/author/<?php authorPermalink($user->display_name);?>/">Se Profil</a>
 <?php endif; ?>
 
 </div>

@@ -1,11 +1,4 @@
 <?php get_header(); ?>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-    $('#nav1 div.tab').addClass('tabOpen');
-    lastBlock = $("#nav1 div.tabOpen");
-    $('html, body').animate({scrollTop: '265px'});
-	});
-</script>
 
 <?php if (have_posts()) : ?>
 <div class="searchresults archive content grid_12 clearfix">

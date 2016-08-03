@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$('html, body').animate({scrollTop: '265px'});
-	});
-</script>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

@@ -4,12 +4,6 @@ Template Name: Oplaeg
 */
 ?>
 <?php get_header(); ?>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-	    $('#nav1 div.tab').addClass('tabOpen');
-	    lastBlock = $("#nav1 div.tabOpen");
-	});
-</script>
 
 	<div class="products content grid_12 clearfix zi1">
 

@@ -4,13 +4,6 @@ Template Name: International
 */
 ?>
 <?php get_header(); ?>
-
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-lastBlock = $("#nav1 div.tabOpen");
-});
-</script>
-
 <div class="international content grid_12 clearfix">
 	<div class="posts grid_6 alpha zi1">
 		<h2>International news</h2>

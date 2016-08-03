@@ -5,11 +5,6 @@ Template Name: Vidensarkiv
 ?>
 <?php get_header(); ?>
 
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$('html, body').animate({scrollTop: '265px'});
-	});
-</script>
 
 <?php
 query_posts('cat=-6' . '&paged=' . get_query_var('paged'));;
