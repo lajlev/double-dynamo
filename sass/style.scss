@@ -144,8 +144,12 @@ a.post-edit-link:hover{
 
 .nav {
 	text-align: right;
+}
 
-	ul.topnav {
+.menu-header-container {
+	display: inline-block;
+
+	ul {
 		display: inline-block;
 
 		li {
@@ -164,15 +168,16 @@ a.post-edit-link:hover{
 			}
 		}
 	}
-	.searchbar {
-		display: inline-block;
+}
 
-		input {
-			font-size: 16px;
-			font-style: italic;
-			padding-left: 18px;
-			color: #bbb;
-		}
+.searchbar {
+	display: inline-block;
+
+	input {
+		font-size: 16px;
+		font-style: italic;
+		padding-left: 18px;
+		color: #bbb;
 	}
 }
 
@@ -303,34 +308,15 @@ div.container h2.heading.grid_12  {
 /*Related Posts*/
 .relatedPosts{
 	margin-bottom:30px;
-}
-.relatedPosts h2{
-	margin-bottom:10px;
-}
 
-.relatedPosts p{
-	margin-bottom:5px;
-}
-
-ul.menu{
-	margin-bottom: 25px;
-}
-
-	ul.menu li a {
-		display: block;
-		background: #ededed;
-		width: 295px;
-		padding: 10px 5px 10px 7px;
-		margin: 0 0 4px;
-		text-decoration: none;
-		border-left: 5px solid #000;
-		color: #000;
+	h2 {
+		margin-bottom:10px;
 	}
-		ul.menu li a:hover {
-			background: #FDB22F;
-			border-color: #895700;
-			color: #000;
-		}
+
+	p {
+		margin-bottom:5px;
+	}
+}
 
 /*Twitter*/
 .twitter ul li{

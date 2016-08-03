@@ -10,6 +10,11 @@ if( !is_admin()){
   add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 }
 
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
 	// Add RSS links to <head> section
 add_theme_support( 'automatic-feed-links' );
 

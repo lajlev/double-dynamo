@@ -38,17 +38,14 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)"
-	href="<?php bloginfo('stylesheet_directory'); ?>/css/fixed-grid.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/fixed-grid.css" />
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 1023px)"
-  href="<?php bloginfo('stylesheet_directory'); ?>/css/app.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 1023px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/app.css" />
 
 
-	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1023px)"
-	href="<?php bloginfo('stylesheet_directory'); ?>/css/mobile.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1023px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/mobile.css" />
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
@@ -72,12 +69,7 @@
 </div>
 
 <div class="nav grid_9 clearfix">
-  <ul class="topnav">
-    <li><a href="#">Foredrag</a></li>
-    <li><a href="#">Cases</a></li>
-    <li><a href="#">Om os</a></li>
-    <li><a href="#">Kontakt</a></li>
-  </ul>
+  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
   <div class="searchbar">
     <?php include (TEMPLATEPATH . '/searchform.php' ); ?>
