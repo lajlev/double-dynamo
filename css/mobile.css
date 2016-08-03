@@ -1,4 +1,12 @@
-chtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+chtml, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,7 +24,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -59,7 +68,10 @@ table {
 /* =Clear Floated Elements
 --------------------------------------------------------------------------------*/
 /* http://sonspring.com/journal/clearing-floats */
-html body * span.clear, html body * div.clear, html body * li.clear, html body * dd.clear {
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear {
   background: none;
   border: 0;
   clear: both;
@@ -100,7 +112,11 @@ body {
 h2 {
   font-size: 28px; }
 
-.nav, .searchbar, .topNav, body .SnapABug_Button, .topLink {
+.nav,
+.searchbar,
+.topNav,
+body .SnapABug_Button,
+.topLink {
   display: none !important; }
 
 .mobile-menu-wrapper {
@@ -112,16 +128,17 @@ h2 {
   margin-bottom: 2em; }
 
 span.customSelect {
-  background: white url(../img/mobile-menu.png) right center no-repeat;
-  border: 1px solid #dddddd;
-  color: #555555;
+  background: #fff url(../img/mobile-menu.png) right center no-repeat;
+  border: 1px solid #ddd;
+  color: #555;
   padding: 7px 9px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px 2px;
   width: 175px; }
 
-.logo h1 a, .logo h1 a img {
+.logo h1 a,
+.logo h1 a img {
   width: 80%;
   max-width: 548px;
   min-width: 200px;
@@ -147,17 +164,23 @@ div#respond textarea#comment {
 .sidebar {
   margin-top: 2em; }
 
-.team.content .grid_4, .partnere.content .grid_4 {
+.team.content .grid_4,
+.partnere.content .grid_4 {
   zoom: 1;
   margin-bottom: 2em; }
-  .team.content .grid_4:before, .team.content .grid_4:after, .partnere.content .grid_4:before, .partnere.content .grid_4:after {
+  .team.content .grid_4:before, .team.content .grid_4:after,
+  .partnere.content .grid_4:before,
+  .partnere.content .grid_4:after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden; }
-  .team.content .grid_4:after, .partnere.content .grid_4:after {
+  .team.content .grid_4:after,
+  .partnere.content .grid_4:after {
     clear: both; }
-.team.content .presse, .partnere.content .presse {
+
+.team.content .presse,
+.partnere.content .presse {
   margin-top: 0; }
 
 .childCatPosts .post.grid_4 {

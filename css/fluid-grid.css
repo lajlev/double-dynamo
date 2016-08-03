@@ -4,7 +4,15 @@
 
   Licensed under GPL and MIT.
 */
-chtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+chtml, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,7 +30,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -51,22 +60,41 @@ table {
 
 /* =Grid >> Global
 --------------------------------------------------------------------------------*/
-.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14, .grid_15, .grid_16 {
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
   display: inline;
   float: left;
   margin-left: 1%;
   margin-right: 1%; }
 
-.wrap .grid_3, .container_16 .grid_4 {
+.wrap .grid_3,
+.container_16 .grid_4 {
   width: 23%; }
 
-.wrap .grid_6, .container_16 .grid_8 {
+.wrap .grid_6,
+.container_16 .grid_8 {
   width: 48%; }
 
-.wrap .grid_9, .container_16 .grid_12 {
+.wrap .grid_9,
+.container_16 .grid_12 {
   width: 73%; }
 
-.wrap .grid_12, .container_16 .grid_16 {
+.wrap .grid_12,
+.container_16 .grid_16 {
   width: 98%; }
 
 /* =Grid >> Children (Alpha ~ First, Omega ~ Last)
@@ -143,13 +171,16 @@ table {
 
 /* =Prefix Extra Space >> Global
 --------------------------------------------------------------------------------*/
-.wrap .prefix_3, .container_16 .prefix_4 {
+.wrap .prefix_3,
+.container_16 .prefix_4 {
   padding-left: 25%; }
 
-.wrap .prefix_6, .container_16 .prefix_8 {
+.wrap .prefix_6,
+.container_16 .prefix_8 {
   padding-left: 50%; }
 
-.wrap .prefix_9, .container_16 .prefix_12 {
+.wrap .prefix_9,
+.container_16 .prefix_12 {
   padding-left: 75%; }
 
 /* =Prefix Extra Space >> 12 Columns
@@ -218,13 +249,16 @@ table {
 
 /* =Suffix Extra Space >> Global
 --------------------------------------------------------------------------------*/
-.wrap .suffix_3, .container_16 .suffix_4 {
+.wrap .suffix_3,
+.container_16 .suffix_4 {
   padding-right: 25%; }
 
-.wrap .suffix_6, .container_16 .suffix_8 {
+.wrap .suffix_6,
+.container_16 .suffix_8 {
   padding-right: 50%; }
 
-.wrap .suffix_9, .container_16 .suffix_12 {
+.wrap .suffix_9,
+.container_16 .suffix_12 {
   padding-right: 75%; }
 
 /* =Suffix Extra Space >> 12 Columns
@@ -294,7 +328,10 @@ table {
 /* =Clear Floated Elements
 --------------------------------------------------------------------------------*/
 /* http://sonspring.com/journal/clearing-floats */
-html body * span.clear, html body * div.clear, html body * li.clear, html body * dd.clear {
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear {
   background: none;
   border: 0;
   clear: both;
