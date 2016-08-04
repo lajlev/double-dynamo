@@ -45,6 +45,54 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.sidr {
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 260px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #2E3234; }
+  .sidr.right {
+    left: auto;
+    right: -260px; }
+  .sidr .menu {
+    padding-top: 10px;
+    border-bottom: 1px solid #111; }
+    .sidr .menu li {
+      display: block; }
+      .sidr .menu li.current-menu-item a {
+        background: #444; }
+      .sidr .menu li.current-menu-item .sub-menu li a {
+        background: none; }
+      .sidr .menu li a {
+        display: block;
+        padding: 14px 20px;
+        font-size: 18px;
+        color: white;
+        border-top: 1px solid #111;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .sidr .menu li .sub-menu a {
+        letter-spacing: 0;
+        text-transform: none;
+        padding-left: 30px;
+        color: #ccc;
+        border-top: none; }
+
+#toggle-menu-button {
+  display: block;
+  font-size: 16px;
+  border: 1px solid #efefef;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 3px;
+  position: absolute;
+  right: 10px;
+  top: 15px; }
+
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -104,46 +152,20 @@ html body * dd.clear {
   display: block; }
 
 body {
-  font: 14px/20px 'Lato', Helveltica, Arial, Sans-Serif; }
+  font: 14px/20px 'Lato', Helveltica, Arial, Sans-Serif;
+  width: 100%;
+  height: 100%; }
 
-.topSpacer {
-  height: 30px; }
+.header__menu,
+.searchbar {
+  display: none; }
 
 h2 {
   font-size: 28px; }
 
-.nav,
-.searchbar,
-.topNav,
 body .SnapABug_Button,
 .topLink {
   display: none !important; }
-
-.mobile-menu-wrapper {
-  display: block;
-  position: relative;
-  top: -74px;
-  z-index: 9999;
-  float: right;
-  margin-bottom: 2em; }
-
-span.customSelect {
-  background: #fff url(../img/mobile-menu.png) right center no-repeat;
-  border: 1px solid #ddd;
-  color: #555;
-  padding: 7px 9px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px 2px;
-  width: 175px; }
-
-.logo h1 a,
-.logo h1 a img {
-  width: 80%;
-  max-width: 548px;
-  min-width: 200px;
-  height: auto;
-  margin-bottom: 1em; }
 
 #dfcg-fullsize {
   width: 100% !important; }
@@ -221,15 +243,6 @@ div#respond textarea#comment {
     border: none; }
   .slider {
     display: none; }
-  span.customSelect {
-    width: 100%; }
-  .mobile-menu-wrapper {
-    display: block;
-    position: relative;
-    top: auto;
-    z-index: 9999;
-    float: none;
-    width: 100%; }
   .content h2.heading {
     font: 28px 'Lato', Helveltica, Arial, Sans-Serif; }
   .childCatPosts .post.grid_4 {
