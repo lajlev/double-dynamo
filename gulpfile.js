@@ -8,25 +8,26 @@ var gulp = require('gulp'),
 gulp.task('serve', ['sassfiles', 'stylecss'], function() {
 
   browserSync.init({
-    proxy: "cfdp.dev"
+    proxy: "cfdp.dev",
+    notify: false
   });
 
   gulp.watch(["sass/*.scss", '!sass/style.scss'], ['sassfiles']);
   gulp.watch(['sass/style.scss'], ['stylecss']);
-  gulp.watch("*.php").on('change', browserSync.reload);
+  gulp.watch(["*.php"], ["*.js"]).on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sassfiles', function() {
   return gulp.src(['sass/*.scss', '!sass/style.scss'])
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest("css"))
     .pipe(browserSync.stream());
 });
 
 gulp.task('stylecss', function() {
   return gulp.src("sass/style.scss")
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest("./"))
     .pipe(browserSync.stream());
 });
