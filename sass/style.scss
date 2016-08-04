@@ -781,46 +781,68 @@ img.intro-frontpage{
 /*--------------
 	GRØN KNAP
 ---------------*/
-a.green_button{background:transparent url(img/buttons/green_a.png) no-repeat scroll bottom right;color:#e6e6e6;display:block;float:left;font:bold 14px 'Lato', arial, sans-serif;height:35px;padding-right:20px;text-decoration:none}
+a.green_button{
+	background: #27ae60;
+	color: white;
+	display: inline-block;
+	padding: 12px 18px;
+	border-radius: 3px;
 
-a.green_button span{background:transparent url(img/buttons/green_span.png) no-repeat scroll bottom left;display:block;line-height:20px;padding:7px 0 8px 40px}
+	&:hover {
+		text-decoration: none;
+		background: darken(#27ae60, 5%);
+	}
+}
 
-/*---- hover ----*/
-a.green_button:hover{background-position:top right;color:#e6e6e6;outline:none;}
-a.green_button:hover span{background-position:top left;}
+
 
 /*--------------
 	RØD KNAP
 ---------------*/
-a.red_button{background:transparent url(img/buttons/red_a.png) no-repeat scroll bottom right;color:#e6e6e6;display:block;float:left;font:bold 14px 'Lato', arial, sans-serif;height:35px;padding-right:20px;text-decoration:none;}
+a.red_button{
+	background: #c0392b;
+	color: white;
+	display: inline-block;
+	padding: 12px 18px;
+	border-radius: 3px;
 
-a.red_button span{background:transparent url(img/buttons/red_span.png) no-repeat scroll bottom left;display:block;line-height:20px;padding:7px 0 8px 40px;}
-
-/*---- hover ----*/
-a.red_button:hover{background-position:top right;color:#e6e6e6;outline:none;}
-a.red_button:hover span{background-position:top left;}
+	&:hover {
+		text-decoration: none;
+		background: darken(#c0392b, 5%);
+	}
+}
 
 /*--------------
 	BLÅ KNAP
 ---------------*/
-a.blue_button{background:transparent url(img/buttons/blue_a.png) no-repeat scroll bottom right;color:#e6e6e6;display:block;float:left;font:bold 14px 'Lato', arial, sans-serif;height:35px;padding-right:20px;text-decoration:none;}
+a.blue_button{
+	background: #2980b9;
+	color: white;
+	display: inline-block;
+	padding: 12px 18px;
+	border-radius: 3px;
 
-a.blue_button span{background:transparent url(img/buttons/blue_span.png) no-repeat scroll bottom left;display:block;line-height:20px;padding:7px 0 8px 40px;}
-
-/*---- hover ----*/
-a.blue_button:hover{background-position:top right;color:#e6e6e6;outline:none;}
-a.blue_button:hover span{background-position:top left;}
+	&:hover {
+		text-decoration: none;
+		background: darken(#2980b9, 5%);
+	}
+}
 
 /*--------------
 	GUL KNAP
 ---------------*/
-a.yellow_button{background:transparent url(img/buttons/yellow_a.png) no-repeat scroll bottom right;color:#e6e6e6;display:block;float:left;font:bold 14px 'Lato', arial, sans-serif;height:35px;padding-right:20px;text-decoration:none;}
+a.yellow_button{
+	background: #f1c40f;
+	color: white;
+	display: inline-block;
+	padding: 12px 18px;
+	border-radius: 3px;
 
-a.yellow_button span{background:transparent url(img/buttons/yellow_span.png) no-repeat scroll bottom left;display:block;line-height:20px;padding:7px 0 8px 40px;}
-
-/*---- hover ----*/
-a.yellow_button:hover{background-position:top right;color:#e6e6e6;outline:none;}
-a.yellow_button:hover span{background-position:top left;}
+	&:hover {
+		text-decoration: none;
+		background: darken(#f1c40f, 5%);
+	}
+}
 
 
 
