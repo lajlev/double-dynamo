@@ -40,10 +40,9 @@
 
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/fixed-grid.css" />
 
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/desktop.css" />
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 1023px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/app.css" />
-
 
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1023px)" href="<?php bloginfo('stylesheet_directory'); ?>/css/mobile.css" />
 
@@ -52,136 +51,35 @@
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.sidr.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/general.js"></script>
+
 
 
 </head>
 
 <body <?php body_class(); ?>>
 
-<div class="container wrap clearfix">
-<a name="top"></a>
 
-<div class="logo grid_3">
-  <a href="<?php bloginfo('url'); ?>">
-    <img src="<?php bloginfo('template_url'); ?>/img/logo@2x.png" width="215" alt="Logo CfDP" />
-  </a>
-</div>
+<div class="container wrap clearfix" id="content-view">
+	<div class="header">
+		<a name="top"></a>
 
-<div class="nav grid_9 clearfix">
-  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+		<div class="logo grid_3">
+		  <a href="<?php bloginfo('url'); ?>">
+		    <img src="<?php bloginfo('template_url'); ?>/img/logo@2x.png" width="215" alt="Logo CfDP" />
+		  </a>
+		</div>
+    <a id="toggle-menu-button" href="#toggle-menu-button">&#9776;&nbsp; Menu</a>
 
-  <div class="searchbar">
-    <?php include (TEMPLATEPATH . '/searchform.php' ); ?>
-  </div>
-</div>
+		<div class="nav grid_9 clearfix">
+		  <div class="searchbar">
+		    <?php include (TEMPLATEPATH . '/searchform.php' ); ?>
+		  </div>
+		  <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header__menu', 'depth' => '1'  ) ); ?>
 
-<div class="grid_12 delimiter"></div>
-
-<!--
-
-<div class="logo grid_7"><h1><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="" /></a></h1></div>
-
-<div class="topNav grid_5">
-	<ul>
-		<li><a href="<?php bloginfo('url'); ?>/mennesker/join">Bliv frivillig</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/om-center-for-digital-paedagogik">Om os</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/presse">Presse</a></li>
-		<li><a onclick="return SnapABug.startLink();" href="#">Kontakt</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/in-english">English</a></li>
-	</ul>
-</div>
-
-<div class="searchbar grid_5 clearfix">
-	<?php// include (TEMPLATEPATH . '/searchform.php' ); ?>
-</div>
-<noscript><h2 class="noscript grid_12 clearfix">Javascript er nødvendigt for at gå på opdagelse på cfdp.dk</h2></noscript>
-<div class="nav grid_12">
-	<ul id="accordion">
-		<li id="nav1">
-
-			<div class="tab">
-				<span></span>
-				<div class="navContent">
-					<div class="lineShadow"></div>
-					<ul>
-						<li><a href="<?php// bloginfo('url'); ?>/oplaeg/#1-faglige">Faglige oplæg</a></li>
-						<li><a href="<?php// bloginfo('url'); ?>/oplaeg/#2-elev">Elevoplæg</a></li>
-						<li><a href="<?php// bloginfo('url'); ?>/oplaeg/#3-foraelder">Forælderoplæg</a></li>
-						<li><a href="<?php// bloginfo('url'); ?>/oplaeg/#4-laeringsmaterialer">Læringsmaterialer</a></li>
-					</ul>
-					<ul class="c2">
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</li>
-		<li id="nav2">
-
-			<div class="tab">
-				<span></span>
-				<div class="navContent">
-					<div class="lineShadow"></div>
-					<ul>
-						<li><a href="<?php// bloginfo('url'); ?>/erfarninger/#1-produkter">Produkter</a></li>
-						<li><a href="<?php// echo get_permalink(1204); ?>">Vidensarkiv</a></li>
-						<li><a href="<?php// echo get_permalink(1638); ?>">Publikationer</a></li>
-						<li><a href="<?php// echo get_permalink(7204); ?>">Digital Trivsel</a></li>
-					</ul>
-					<ul class="c2">
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</li>
-		<li id="nav3">
-
-			<div class="tab">
-				<span></span>
-				<div class="navContent">
-					<div class="lineShadow"></div>
-					<ul>
-						<li><a href="<?php// bloginfo('url'); ?>/projekter/#1-igangvaerende-projekter">Igangværende</a></li>
-						<li><a href="<?php// bloginfo('url'); ?>/projekter/#2-kommende-projekter">Kommende</a></li>
-						<li><a href="<?php// bloginfo('url'); ?>/erfarninger/#2-projekter">Afsluttede</a></li>
-						<li><a href="<?php// echo get_permalink(248); ?>">Bliv Partner</a></li>
-						<li>&nbsp;</li>
-					</ul>
-					<ul class="c2">
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</li>
-		<li id="nav4">
-
-			<div class="tab">
-				<span></span>
-				<div class="navContent">
-					<div class="lineShadow"></div>
-					<ul>
-						<li><a href="<?php// bloginfo('url'); ?>/mennesker/#team">Hvem er vi?</a></li>
-						<li><a href="<?php// echo get_permalink(517); ?>">Bestyrelsen</a></li>
-						<li><a href="<?php// echo get_permalink(590); ?>">Partnere</a></li>
-						<li><a href="<?php// echo get_permalink(596); ?>">Vil du være med?</a></li>
-					</ul>
-					<ul class="c2">
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</li>
-	</ul>
-  -->
+		</div>
+		<div class="sub-menu-wrap grid_12" id="mobile-menu">
+			<?php wp_nav_menu( array( 'theme_location' => 'sub-header-menu', 'container_class' => 'header__sub-menu', 'container_id' => 'mobile-menu-view', 'depth' => '2' ) ); ?>
+		</div>
+	</div>
