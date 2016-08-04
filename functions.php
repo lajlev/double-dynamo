@@ -11,7 +11,13 @@ if( !is_admin()){
 }
 
 function register_my_menu() {
-  register_nav_menu('header-menu',__( 'Header Menu' ));
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'sub-header-menu' => __( 'Sub Header Menu' ),
+      'mobile-menu' => __( 'Mobile Menu' )
+    )
+  );
 }
 add_action( 'init', 'register_my_menu' );
 
