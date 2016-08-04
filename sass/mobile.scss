@@ -104,8 +104,9 @@ body {
   height: 100%;
 }
 
-// Header Menus
+// Hide hacks fro mobile
 .header__menu,
+.wpadminbar,
 .searchbar {
   display: none;
 }
