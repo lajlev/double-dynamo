@@ -11,6 +11,7 @@ General comments/License Statement if any.
 .
 */
 
+
 body {
 	background: #fefbf9;
 	font: 14px/20px 'Lato', Helveltica, Arial, Sans-Serif;
@@ -111,14 +112,14 @@ span.line{
 }
 
 .wrap {
-	height:100%;
-	display:block;
+	height: 100%;
+	display: block;
 	background-color: #fff;
 	border:1px solid #ece3d6;
-	border-top:none;
-	padding:0 10px;
- 	margin-top: 0px;
-	overflow:hidden;
+	border-top: none;
+	padding: 0 10px;
+ 	margin-top: 0;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -140,53 +141,6 @@ a.post-edit-link:hover{
 	img {
 		padding: 20px 0 15px;
 	}
-}
-
-.nav {
-	text-align: right;
-}
-
-.menu-header-container {
-	display: inline-block;
-
-	ul {
-		display: inline-block;
-
-		li {
-				display: inline-block;
-				border-right: 1px solid #ece3d6;
-
-				&:first-child {
-					border-left: 1px solid #ece3d6;
-				}
-
-			a {
-				padding: 28px 20px 22px;
-				font-size: 16px;
-				font-weight: bold;
-				display: inline-block;
-			}
-		}
-	}
-}
-
-.searchbar {
-	display: inline-block;
-
-	input {
-		font-size: 16px;
-		font-style: italic;
-		padding-left: 18px;
-		color: #bbb;
-	}
-}
-
-.delimiter {
-	position: relative;
-	left: -25px;
-	width: calc(100% + 20px) !important;
-	border-bottom: 1px solid #ece3d6;
-	margin-bottom: 30px;
 }
 
 

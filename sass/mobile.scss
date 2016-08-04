@@ -1,5 +1,6 @@
 
 @import "reset";
+@import "mobile-menu";
 
 @mixin clearfix {
   zoom:1;
@@ -99,10 +100,14 @@ html body * dd.clear
 body {
   //overflow-x: hidden;
   font: 14px/20px 'Lato', Helveltica, Arial, Sans-Serif;
+  width: 100%;
+  height: 100%;
 }
 
-.topSpacer {
-  height: 30px;
+// Header Menus
+.header__menu,
+.searchbar {
+  display: none;
 }
 
 h2 {
@@ -110,45 +115,11 @@ h2 {
 }
 
 // Hide desktop only elements
-.nav,
-.searchbar,
-.topNav,
 body .SnapABug_Button,
 .topLink {
   display: none !important;
 }
 
-// Show menu
-.mobile-menu-wrapper {
-  display: block;
-  position: relative;
-  top: -74px;
-  z-index: 9999;
-  float: right;
-  margin-bottom: 2em;
-}
-
-// Style custom select menu
-span.customSelect {
-  background:#fff url(../img/mobile-menu.png) right center no-repeat;
-  border:1px solid #ddd;
-  color:#555;
-  padding:7px 9px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px 2px;
-  width:175px;
-}
-
-// Header
-.logo h1 a,
-.logo h1 a img {
-  width: 80%;
-  max-width: 548px;
-  min-width: 200px;
-  height: auto;
-  margin-bottom: 1em;
-}
 
 // FRONTPAGE
 // slider
@@ -258,18 +229,6 @@ div#respond textarea#comment {
     display: none;
   }
 
-  span.customSelect {
-    width: 100%;
-  }
-
-  .mobile-menu-wrapper {
-    display: block;
-    position: relative;
-    top: auto;
-    z-index: 9999;
-    float: none;
-    width: 100%;
-  }
 
   .content h2.heading {
     font: 28px 'Lato', Helveltica, Arial, Sans-Serif;
@@ -289,52 +248,3 @@ div#respond textarea#comment {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
